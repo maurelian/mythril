@@ -30,7 +30,8 @@ class EthJsonRpc(object):
     DEFAULT_GAS_PER_TX = 90000
     DEFAULT_GAS_PRICE = 50 * 10**9  # 50 gwei
 
-    def __init__(self, host='localhost', port=GETH_DEFAULT_RPC_PORT, tls=False):
+    # def __init__(self, host='localhost', port=GETH_DEFAULT_RPC_PORT, tls=False):
+    def __init__(self, host='mainnet.infura.io/iJh65Cf2pKOcrYXWZwm3', port=443, tls=True):
         self.host = host
         self.port = port
         self.tls = tls
